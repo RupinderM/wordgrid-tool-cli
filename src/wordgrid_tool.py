@@ -78,12 +78,12 @@ def main():
     # Check that we have the correct game
     if data["gameNumber"] != game_number:
         print(
-            f"This is not game {game_number}, this is game {data["gameNumber"]}. Please report this error."
+            f"This is not game {game_number}, this is game {data['gameNumber']}. Please report this error."
         )
 
     # Loop over each square selected and add parsed data to the printed output
     printed_output = ""
-    printed_output += f"Game {data["gameNumber"]}:\n"
+    printed_output += f"Game {data['gameNumber']}:\n"
     for square in squares:
         # Get the stats
         answers = len(data["squares"][square]["answers"])
