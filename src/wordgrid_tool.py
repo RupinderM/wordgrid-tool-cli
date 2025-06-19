@@ -118,7 +118,7 @@ def main():
         # Format the printed output
         printed_output += f"{square_name} square\n"
         printed_output += f"Rules: {rules}\n"
-        printed_output += f"Found: {words_found} out of {answers} ({100 * (words_found / answers)}%)\n"
+        printed_output += f"Found: {words_found} out of {answers} ({round(100 * (words_found / answers), 1)}%)\n"
         printed_output += f"{answers} possible answers, {unicorns} current unicorns and {unfound_unicorns} unfound unicorns\n"
 
         if args.imacheater:
